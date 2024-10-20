@@ -22,7 +22,7 @@ const SignUpPage = () => {
         e.preventDefault();
 
         try{
-            const response = await axios.post('http://localhost:5000/api/auth/signup', formData);
+            const response = await axios.post('https://tradeify-paper-trading-lpgnc1c23-adilshaikh19s-projects.vercel.app/api/auth/signup', formData);
             console.log("SignUp SucessFull", response.data)
             navigate('/login')
         }catch (error) {
