@@ -37,13 +37,3 @@ jspm_packages/
 # OS-specific files
 .DS_Store
 Thumbs.db
-
-# Optional npm cache directory
-.npm
-
-# Yarn Integrity file
-.yarn-integrity
-
-# Storybook build outputs
-.out/
-.storybook-out/
