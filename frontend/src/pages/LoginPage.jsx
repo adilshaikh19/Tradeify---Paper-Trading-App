@@ -32,15 +32,15 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Login</h2>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+    <div>
+      <div>
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
           <input
             type="email"
             name="email"
             onChange={handleChange}
-            className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+            className="input"
             placeholder="Email address"
             required
           />
@@ -48,23 +48,23 @@ const LoginPage = () => {
             type="password"
             name="password"
             onChange={handleChange}
-            className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+            className="input"
             placeholder="Password"
             required
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+            className="submit-button"
           >
             Login
           </button>
           
-          <div className="flex items-center justify-between flex-wrap">
-            <p className="text-gray-900 mt-4">
-              Don&apos;t have an account?{' '}
+          <div className="flex-container">
+            <p className="signup-text">
+              Don't have an account?{' '}
               <button
                 onClick={() => navigate('/signup')}
-                className="text-sm text-blue-500 hover:underline"
+                className="signup-button"
               >
                 Signup
               </button>
